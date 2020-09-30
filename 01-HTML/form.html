@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form学习</title>
+</head>
+<body>
+<div>
+    <form>
+        姓名： <input type="text" value="simon"><br>
+        昵称： <input type="text" value="昵称" readonly=""><br>
+        名字： <input type="text" value="name" disabled=""><br>
+        密码： <input type="password" value="pwd" size="50"><br>
+        性别： <input type="radio" name="单选框" id="radio-01" value="male" checked="">男
+        <input type="radio" name="单选框" id="radio-02" value="female">女<br>
+        爱好： <input type="checkbox" name="love" value="eat">吃饭
+                <input type="checkbox" name="love" value="sleep">睡觉
+                <input type="checkbox" name="love" value="bat">打豆豆
+
+    </form>
+</div>
+<div>
+    <ol>
+        <li>
+            <h2>&lt;input&gt;标签</h2>
+                <b>属性：</b>
+                <ol>
+                    <li>
+                        type:
+                        <ul type="circle">
+                            <li>text (默认)</li>
+                            <li>password</li>
+                            <li>redio: 单选按钮</li>
+                            <li>checkbox: 多选按钮，name相同的作为一组</li>
+                            <li>hidden: 隐藏框，表单中不希望用户看见的信息</li>
+                            <li>button: 普通按钮，结合js使用</li>
+                            <li>submit</li>
+                            <li>reset: 重置按钮</li>
+                            <li>image: 图片按钮，和submit功能一致，只不过图片按钮可以显示图片</li>
+                            <li>file: 文件选择框</li>
+                        </ul>
+                    </li>
+                    <li>
+                        value: 文本框中默认的内容
+                    </li>
+                    <li>
+                        readonly: 文本框只读属性，不可更新，鼠标光标不同的浏览器可能点不进去
+                    </li>
+                    <li>
+                        disable: 文本框只读，不能编辑，光标点不进去。属性值可以不写
+                    </li>
+                    <li>
+                        size:  文本框中可以显示的字符数
+                    </li>
+                </ol>
+        </li>
+
+    </ol>
+</div>
+</body>
+</html>
