@@ -7,7 +7,7 @@
 <body>
 
 <div title="学习<iframe>标签">
-    <iframe src="label.html" width="400" height="400" scrolling="true" name="窗口名称">
+    <iframe src="label.html" width="400" height="400" scrolling="true" name="窗口名称" frameborder="0">
     </iframe>
 </div>
 
@@ -19,6 +19,26 @@
     <a href="right.html" target="myFrame">链接到right.html</a><br>
     <iframe src="label.html" width="400" height="400" name="myFrame"></iframe><br>
 </div>
-
+<br>
+<div>
+    <ul>
+        <strong>&lt;frame&gt; 框架，一个框架显示一个页面,属性如下：</strong>
+        <li type="square"> scrolling="no": 是否 需要滚动条，默认值为true</li>
+        <li type="square">noresize: 不可改变框架大小</li>
+        <li type="square">bordercolor: 给框架定义颜色</li>
+        <li type="square">frameborder="0"或frameborder="1":隐藏或显示边框</li>
+        <li type="square">name: 给框架起个名字，利用name属性，可以在框架内进行链接</li>
+    </ul>
+</div>
+<div>
+    <ol>
+       <strong> &lt;iframe&gt;: 内嵌框架</strong>
+        <li>src=XXX.html: 内嵌的页面</li>
+        <li>width=800: 宽度</li>
+        <li>height: 高度</li>
+        <li>scrolling="no": 是否需要滚动条</li>
+        <li>name: 给框架起个名字，利用name属性，可以在框架内进行链接</li>
+    </ol>
+</div>
 </body>
 </html>

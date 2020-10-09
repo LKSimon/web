@@ -20,6 +20,34 @@
     </form>
 </div>
 <div>
+    <form>
+        <select>
+            <option>小学</option>
+            <option>初中</option>
+            <option>高中</option>
+            <option>大学</option>
+            <option selected>研究生</option>
+        </select>
+        <br><br><br>
+        <select size="3">
+            <option>小学</option>
+            <option>初中</option>
+            <option>高中</option>
+            <option>大学</option>
+            <option>研究生</option>
+        </select>
+        <br><br><br>
+        <select multiple="multiple">
+            <option>小学</option>
+            <option selected>初中</option>
+            <option selected>高中</option>
+            <option>大学</option>
+            <option>研究生</option>
+        </select>
+
+    </form>
+</div>
+<div>
     <ol>
         <li>
             <h2>&lt;input&gt;标签</h2>
@@ -57,5 +85,68 @@
 
     </ol>
 </div>
+<div>
+    <form>
+        <textarea name="txtInfo" rows="4" cols="20">1、不爱摄影不懂设计的程序猿不是一个好的产品经理</textarea>
+        <textarea name="txrInfo" rows="4" cols="20">
+            1、不爱摄影不懂设计的程序猿不是一个好的产品经理
+        </textarea>
+        <textarea name="txrInfo" rows="4" cols="20">
+
+            1、不爱摄影不懂设计的程序猿不是一个好的产品经理
+        </textarea>
+    </form>
+</div>
+<div>
+    <form>
+
+        <fieldset>
+            <legend>账号信息</legend>
+            姓名：<input value="呵呵" >逗比<br>
+            密码：<input type="password" value="pwd" size="50"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>其他信息</legend>
+            性别：<input type="radio" name="gender" value="male" checked="">男
+            <input type="radio" name="gender" value="female" >女<br>
+            爱好：<input type="checkbox" name="love" value="eat">吃饭
+            <input type="checkbox" name="love" value="sleep">睡觉
+            <input type="checkbox" name="love" value="bat">打豆豆
+        </fieldset>
+    </form>
+</div>
+<biv>
+    <!--只有点击圆圈才能选中相应的值-->
+    <input type="radio" name="sex" /> 男
+    <input type="radio" name="sex" /> 女
+    <br><br>
+    <!--label标签中使用for属性，值于input便签 id属性关联，当点击男或女字体时分别选中相应的值-->
+    <input type="radio" name="sex" id="nan" />  <label for="nan"/> 男
+    <input type="radio" name="sex" id="nv" />  <label for="nv"/> 女
+</biv>
+
+<div>
+    <ol>
+       <strong> &lt;select&gt;标签属性：</strong>
+        <li>
+            multiple: 可对下拉列表进行多选，属性值为multiple,也可以为空，即multiple="" 或者 multiple="multiple"
+        </li>
+        <li>
+            size: 若属性值大于1，则列表为滚动视图，默认为1，即下拉视图
+        </li>
+    </ol>
+    <ol>
+        <strong>&lt;option&gt;属性：</strong>
+        <li>selected: 预选中</li>
+    </ol>
+</div>
+<div>
+    &lt;textarea&gt;标签属性
+    <li>rows="4": 指定文本区域的行数</li>
+    <li>cols="20": 指定文本区域的列数</li>
+    <li>readonly: 只读</li>
+</div>
+
 </body>
 </html>
