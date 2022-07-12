@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    position: relative;
+    overflow: hidden;
+}
+
+.app .scroll {
+    margin: 0;
+    padding: 0;
+    /*width: 700px;*/
+    /*height: 320px;*/
+    /*display: inline-block;*/
+    /*list-style-type:circle;*/
+}
+
+.app .scroll li {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    list-style-type: none;
+}
+
+
+.app .scroll .img {
+    display: none;
+    width: 100%;
+}
+
+.app .scroll .current {
+    display: inline-block;
+}
+
+.scroll .lf {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    opacity: .5;
+    background-image: url('images/arrow-left.png');
+    /*background-position: -83px 0;*/
+    /*background-position: center;*/
+    background-position-x: center;
+    background-position-y: center;
+    background-color: red;
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 69px;
+    cursor: pointer;
+    transform: translateY(-50%); /* 向y轴正数方向移动 */
+}
+
+.scroll .lr {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    opacity:.5;
+    background-image: url('images/arrow-right.png');
+    background-position: -123px 0;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: red;
+    width: 41px;
+    height: 69px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    /*background: url('images/arrow-right.png') red no-repeat center center*/
+}
+
+.dots {
+    left: 50%;
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+    list-style-type: square;
+    color: blueviolet;
+    background: blue;
+}
+
+.dots > span {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 11px;
+    height: 11px;
+    border: 3px solid rgba(204, 204, 204, 0.2); /*设置原点边界宽、样式、颜色*/
+    border-radius: 150px; /*向边界添加圆角半径*/
+    cursor: pointer;
+    background: white;
+}
+
+.dots > span:not(:last-child) {
+    margin-right: 5px; /*设置远点右边界*/
+}
+
+/* 小圆点的颜色 */
+.dots .square {
+    background: #f46;
+}
+
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.app {*/
+/*    width: 100%;*/
+/*    margin: 50px 0;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.app .scroll {*/
+/*    position: relative;*/
+/*    display: inline-block;*/
+/*    width: 1226px;*/
+/*    height: 460px;*/
+/*}*/
+
+/*.app .scroll .img {*/
+/*    display: none;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.app .scroll .current {*/
+/*    display: block;*/
+/*}*/
+
+/*.scroll .lf {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 10px;*/
+/*    background-image: url('img/arrow.png');*/
+/*    background-position: -83px 0;*/
+/*    width: 41px;*/
+/*    height: 69px;*/
+/*    cursor: pointer;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+
+/*.scroll .lr {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    right: 10px;*/
+/*    background-image: url('img/arrow.png');*/
+/*    background-position: -123px 0;*/
+/*    width: 41px;*/
+/*    height: 69px;*/
+/*    cursor: pointer;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+
+/*.dots {*/
+/*    position: absolute;*/
+/*    bottom: 15px;*/
+/*    right: 20px;*/
+/*    width: 160px;*/
+/*}*/
+
+/*.dots>span {*/
+/*    display: inline-block;*/
+/*    box-sizing: border-box;*/
+/*    width: 11px;*/
+/*    height: 11px;*/
+/*    border: 3px solid rgba(204, 204, 204, 0.2);*/
+/*    border-radius: 15px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.dots>span:not(:last-child) {*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*!* 小圆点的颜色 *!*/
+/*.dots .square {*/
+/*    background: #f46;*/
+/*}*/

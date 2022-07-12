@@ -1,0 +1,63 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <style>
+        .app {
+            width: 700px;
+            height: 320px;
+        }
+
+        .app .scroll {
+            height: 320px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="app">
+    <div class="scroll">
+        <!-- 图片展示 -->
+        <li>
+            <a href=""> <img src="images/1.jpg" alt="scrollImage" class="img current" style="width: 700px;"></a>
+        </li>
+        <li>
+            <a href=""> <img src="images/2.jpg" alt="scrollImage" class="img" style="width:700px;"></a>
+        </li>
+        <li>
+            <a href=""> <img src="images/3.jpg" alt="scrollImage" class="img" style="width:700px;"></a>
+        </li>
+        <li>
+            <a href=""> <img src="images/4.jpg" alt="scrollImage" class="img" style="width:700px;"></a>
+        </li>
+        <li>
+            <a href=""> <img src="images/5.jpg" alt="scrollImage" class="img" style="width:700px;"></a>
+        </li>
+        <!-- 左右箭头的展示 -->
+        <div class="lf"></div>
+        <div class="lr"></div>
+
+        <!-- 小圆点展示 -->
+        <div class="dots">
+            <span class="square"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+</html>
